@@ -3,9 +3,7 @@ package client;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -18,8 +16,8 @@ import javafx.stage.Stage;
  * @version Do oddania
  *
  */
-public class DrawBox {
-    public static void display(String elements){
+class DrawBox {
+    static void display(String elements){
         Stage window = new Stage();
         window.setAlwaysOnTop(true);
         window.setTitle("Draw Box");

@@ -1,6 +1,5 @@
 package client;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -116,8 +115,8 @@ public class ClientBST extends Application {
     }
 
     /**
-     * Tworzy lauout klienta, składający się z dwóch paneli z kontrolkami oraz listy drzew.
-     * @return
+     * Tworzy layout klienta, składający się z dwóch paneli z kontrolkami oraz listy drzew.
+     * @return gotowy layout
      */
     private Parent createContent(){
         //Name column

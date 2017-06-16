@@ -14,8 +14,8 @@ import javafx.stage.Stage;
  * @version Do oddania
  *
  */
-public class SearchBox {
-    public static void display(boolean b){
+ class SearchBox {
+     static void display(boolean b){
         Stage window = new Stage();
         window.setAlwaysOnTop(true);
         window.setTitle("Search answer");

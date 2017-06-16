@@ -30,10 +30,6 @@ import java.util.List;
 public class ServerBST {
 
     private static final int PORT_NUMBER = 9978;
-    private ServerSocket serverSocket = null;
-    private Socket clientSocket = null;
-    private BufferedReader in = null;
-    private PrintWriter out = null;
 
     private static List<Tree>  list = new LinkedList<Tree>();
 
@@ -49,8 +45,6 @@ public class ServerBST {
                 PrintWriter out = new PrintWriter(client.getOutputStream(), true);
 
                 String line = "";
-                int c;
-
                 while ((line = in.readLine()) != null) {
 
                     if(line.equals("test")){

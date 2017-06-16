@@ -2,9 +2,7 @@ package client;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -17,8 +15,8 @@ import javafx.stage.Stage;
  * @version Do oddania
  *
  */
-public class DeleteBox {
-    public static void display(boolean b){
+class DeleteBox {
+    static void display(boolean b){
         Stage window = new Stage();
         window.setAlwaysOnTop(true);
         window.setTitle("Delete Box");
@@ -29,9 +27,6 @@ public class DeleteBox {
             messageLabel.setText("Element został wyrzucony z drzewa");
         else
             messageLabel.setText("Element nie zostal wyrzucony z drzewa");
-
-
-;
 
 
         StackPane stackPane = new StackPane(messageLabel);

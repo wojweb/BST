@@ -2,23 +2,21 @@ package client;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
  * Projekt - aplikacja klient-serwer obsługująca drzewa binarne.
  *
  * InsertBox.java
- * Prosta klasa wyświetlająca okienko z informacją o wstawieniu elementu do drzewa
+ * Prosta klasa wyświetlająca okienko z informacją o wstawieniu elementu do drzewa.
  *
  * @author Szymon Wojtaszek 236592
  * @version Do oddania
  *
  */
-public class InsertBox {
-    public static void display(boolean b){
+ class InsertBox {
+     static void display(boolean b){
         Stage window = new Stage();
         window.setAlwaysOnTop(true);
         window.setTitle("Insert Box");

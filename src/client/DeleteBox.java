@@ -13,7 +13,7 @@ import javafx.stage.Stage;
  *
  * @author Szymon Wojtaszek 236592
  * @version Do oddania
- *
+ *.
  */
 class DeleteBox {
     static void display(boolean b){

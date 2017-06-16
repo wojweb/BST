@@ -1,6 +1,7 @@
 package client;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
@@ -53,13 +54,16 @@ public class ClientBST extends Application {
         plugIn();
         launch(args);
 
-        plugOut();
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         Stage window = primaryStage;
         window.setTitle("BST - Client");
+        window.setOnCloseRequest(e -> {
+            plugOut();
+            Platform.exit();
+        });
 
 
 
@@ -142,7 +146,7 @@ public class ClientBST extends Application {
 
         //Name input
         nameInput = new TextField();
-        nameInput.setPromptText("Name");
+        nameInput.setPromptText("New tree");
         nameInput.setMinWidth(100);
 
 

@@ -9,27 +9,33 @@ package client;
  * @version Do oddania
  *
  */
-class TreeInfo {
+public class TreeInfo {
     private String treeName;
     private String typeName;
     private Integer number;
 
-    String getTreeName() {
+    TreeInfo(){
+        typeName = "";
+        typeName = "";
+        number = 0;
+    }
+
+    public String getTreeName() {
         return treeName;
     }
-    void setTreeName(String treeName) {
+    public void setTreeName(String treeName) {
         this.treeName = treeName;
     }
-    String getTypeName() {
+    public String getTypeName() {
         return typeName;
     }
-    void setTypeName(String typeName) {
+    public void setTypeName(String typeName) {
         this.typeName = typeName;
     }
-    Integer getNumber() {
+    public Integer getNumber() {
         return number;
     }
-    void setNumber(Integer number) {
+    public void setNumber(Integer number) {
         this.number = number;
     }
 

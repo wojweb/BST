@@ -40,7 +40,9 @@ public class ServerBST {
         ) {
             while (true) {
                 Socket client = server.accept();
-                System.out.println("Server podloczono");
+                list = new LinkedList<>();
+
+                System.out.println("Server connected");
                 BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
                 PrintWriter out = new PrintWriter(client.getOutputStream(), true);
 
@@ -55,7 +57,7 @@ public class ServerBST {
                     out.println(line);
 
                 }
-                System.out.println("Server rozloczono");
+                System.out.println("Server disconnected");
                 client.close();
                 in.close();
                 out.close();
